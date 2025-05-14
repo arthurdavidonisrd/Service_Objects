@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Grade point averages" %>
+
+<h1>Grade point averages</h1>
+
+<div id="grade_point_averages">
+  <% @grade_point_averages.each do |grade_point_average| %>
+    <%= render grade_point_average %>
+    <p>
+      <%= link_to "Show this grade point average", grade_point_average %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New grade point average", new_grade_point_average_path %>

@@ -1,0 +1,11 @@
+<% content_for :title, "New grade point average" %>
+
+<h1>New grade point average</h1>
+
+<%= render "form", grade_point_average: @grade_point_average %>
+
+<br>
+
+<div>
+  <%= link_to "Back to grade point averages", grade_point_averages_path %>
+</div>

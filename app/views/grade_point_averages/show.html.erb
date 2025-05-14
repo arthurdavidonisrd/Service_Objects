@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @grade_point_average %>
+
+<div>
+  <%= link_to "Edit this grade point average", edit_grade_point_average_path(@grade_point_average) %> |
+  <%= link_to "Back to grade point averages", grade_point_averages_path %>
+
+  <%= button_to "Destroy this grade point average", @grade_point_average, method: :delete %>
+</div>

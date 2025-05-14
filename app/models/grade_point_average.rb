@@ -1,0 +1,2 @@
+class GradePointAverage < ApplicationRecord
+end
