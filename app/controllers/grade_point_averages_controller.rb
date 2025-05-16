@@ -15,6 +15,7 @@ class GradePointAveragesController < ApplicationController
 
   def create
     @grade_point_average = GradePointAverage.new(grade_point_average_params)
+    @grade_point_average.calculate_gpa
 
     if @grade_point_average.save
       redirect_to @grade_point_average, notice: "Grade point average was successfully created."
