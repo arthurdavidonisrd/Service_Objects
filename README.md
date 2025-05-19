@@ -1,24 +1,29 @@
-# README
+# 📦 Service Object in Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 📌 Project Purpose
 
-Things you may want to cover:
+The goal of this project is to provide a practical introduction to the **Service Object** concept in the Ruby on Rails framework, demonstrating how to separate responsibilities and keep controllers and models clean and focused on their primary roles.
 
-* Ruby version
+---
 
-* System dependencies
+## 🧠 What is a Service Object?
 
-* Configuration
+A **Service Object** is a class responsible for encapsulating specific business logic that doesn't naturally belong in models or controllers. They are useful when you want to:
 
-* Database creation
+- Avoid bloated controllers (fat controllers)
+- Keep models simple and focused on persistence-related logic
+- Reuse complex business logic across different parts of the application
+- Improve the testability of your code
 
-* Database initialization
+---
 
-* How to run the test suite
+## 🛠️ Technologies Used
 
-* Services (job queues, cache servers, search engines, etc.)
+- Ruby 3.x
+- Rails 7.x
+- PostgreSQL (or the database of your choice)
+- RSpec (optional, for testing)
+- Rubocop (for static code analysis)
 
-* Deployment instructions
+---
 
-* ...
